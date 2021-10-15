@@ -23,7 +23,7 @@ class Anime():
             buttons=buttonss
             )
 
-    @bot.on(events.NewMessage(pattern=r"^/anime|^/anime@Anime_Gallery_Robot"))
+    @bot.on(events.NewMessage(pattern=r"^/anime|^/anime@tellyanimestorebot"))
     async def event_handler_anime(event):
         if '/anime' == event.raw_text:
             await bot.send_message(
@@ -86,7 +86,7 @@ class Anime():
                         break
 
         except:
-            await event.reply("Something went wrong.....\nCheck if you entered command properly\n\nUse /help or go to \n@Anime_Gallery_Robot_Support if you have any doubts")
+            await event.reply("Something went wrong.....\nCheck if you entered command properly\n\nUse /help or go to \n@tellybots_support if you have any doubts")
 
     @bot.on(events.NewMessage(pattern="/download"))
     async def event_handler_batch(event):
@@ -113,7 +113,7 @@ class Anime():
             )
 
         except:
-            await event.reply("Something went wrong.....\nCheck if you entered command properly\n\nUse /help or go to \n@Anime_Gallery_Robot_Support if you have any doubts")         
+            await event.reply("Something went wrong.....\nCheck if you entered command properly\n\nUse /help or go to \n@tellybots_support if you have any doubts")         
 
     @bot.on(events.CallbackQuery(pattern=b"lt:"))
     async def callback_for_latest(event):
