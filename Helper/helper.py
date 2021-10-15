@@ -1,6 +1,6 @@
-start_text = '''This bot is for downloading any anime direclty via links in multiple quality
+start_text = '''I am Anime Store bot is for downloading any anime direclty via links in multiple quality
                 
-Use /help to know commands and how to use this bot'''
+Use help Command to know commands and how to use me'''
 
 help_text = '''List of commands:
 /anime <name of anime you want> : to download any anime by search
