@@ -4,15 +4,15 @@ from telethon import events
 
 class start():
 
-    @bot.on(events.NewMessage(pattern=r"^/start$|^/start@Anime_Gallery_Robot"))
+    @bot.on(events.NewMessage(pattern=r"^/start$|^/start@tellyanimestorebot"))
     async def event_handler_start(event):
         await bot.send_message(
             event.chat_id,
             start_text,
-            file='https://tenor.com/view/chika-fujiwara-kaguya-sama-love-is-war-anime-wink-smile-gif-18043249'
+            file='https://telegra.ph/file/da383dd8c9add824d76f2.jpg'
         )
 
-    @bot.on(events.NewMessage(pattern=r"^/help$|^/help@Anime_Gallery_Robot"))
+    @bot.on(events.NewMessage(pattern=r"^/help$|^/help@tellyanimestorebot"))
     async def event_handler_help(event):
         await bot.send_message(
             event.chat_id,
@@ -23,6 +23,6 @@ class start():
     async def event_handler_source(event):
         await bot.send_message(
             event.chat_id,
-            '[Source Code On Github](https://github.com/MiyukiKun/Anime_Gallery_Bot)\nThis bot was hosted on Heroku'
+            '[Source Code](https://t.me/tellybots_digital)\nThis bot was hosted on Heroku'
         )
     
